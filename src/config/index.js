@@ -35,7 +35,8 @@ export const SHARE_LINK_API_URL = IS_MAINNET
   : `${API_ROPSTEN_URL}/storage`;
 
 export const INFURA_PROJECT_ID = "1f1ff2b3fca04f8d99f67d465c59e4ef";
-export const LEGACY_OPENCERTS_RENDERER = "https://legacy.opencerts.io/";
+export const LEGACY_OPENCERTS_RENDERER =
+  publicRuntimeConfig.legacyRendererUrl || "https://legacy.opencerts.io/";
 
 export const DEFAULT_SEO = {
   title: "An easy way to check and verify your certificates",
